@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".activity.QuanLyMonHocActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#673AB7"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivTroLaiMH"
+            android:layout_width="82dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_baseline_arrow_back" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="299dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:text="Quản lý môn học "
+            android:textColor="#FDFCFC"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etTimKiemmh"
+            android:layout_width="312dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Tìm kiếm môn học"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/ivSearchMH"
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_baseline_search" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvQuanLyMH"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:text="Mã môn học"
+                android:textSize="16sp"
+                tools:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etMaMon"
+                android:layout_width="254dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:text="Tên môn học"
+                android:textSize="16sp"
+                tools:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etTenMon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:text="Số tín"
+                android:textSize="16sp"
+                tools:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etSoTin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="102dp"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:text="Mục tiêu đầu ra"
+                android:textSize="16sp"
+                tools:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etMucTieuDR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:text="Hình thức thi"
+                android:textSize="16sp"
+                tools:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etHTT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:text="Ngành học"
+                android:textSize="16sp"
+                tools:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etNganh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnLuuMH"
+            android:layout_width="123dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Lưu lại" />
+
+        <Button
+            android:id="@+id/btnXoaMH"
+            android:layout_width="123dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Xóa" />
+    </LinearLayout>
+</LinearLayout>
